@@ -3,13 +3,18 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root{
+    --main-color: rgb(212, 159, 228);
+}
 body{
     font-size: 20px;
 }
-
-.header {
+section, header, footer {
     width: 70%;
     margin: auto;
+
+}
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,8 +50,6 @@ nav ul li a{
 
 .hero {
     display: flex;
-    width: 70%;
-    margin: auto;
     gap: 10px;
     align-items: center;
     /* height: calc(100vh - 100px); */
@@ -106,3 +109,14 @@ a i{
     border: 5px solid rgb(212, 159, 228);
 }
 
+#about{
+    display: flex;
+    gap: 20px;
+}
+.about-text h2{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.about-text h3{
+    font-size: 2rem;
+}
