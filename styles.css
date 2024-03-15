@@ -153,3 +153,36 @@ a i{
 	display: inline-block;
 	margin-right: 10px;
 }
+
+#portfolio h2{
+	font-size: 3rem;
+	margin-bottom: 10px;
+}
+
+#portfolio h4 {
+	font-size: 2rem;
+	margin-bottom: 10px;
+}
+
+.project {
+	display: flex;
+	width: 60%;
+	margin: auto;
+	gap: 40px;
+}
+.project:nth-child(even){
+	flex-direction: row-reverse;
+}
+.project-img {
+	width: 50%;
+}
+.project-img img{
+	width: 100%;
+}
+
+.project-description {
+	width: 50%;
+}
+.project h5{
+	font-size: 1rem;
+}
