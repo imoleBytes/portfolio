@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+	text-decoration: none;
+	color: unset;
 }
 :root{
     --main-color: rgb(212, 159, 228);
@@ -166,9 +168,10 @@ a i{
 
 .project {
 	display: flex;
-	width: 60%;
-	margin: auto;
+	width: 70%;
+	margin: 50px auto;
 	gap: 40px;
+
 }
 .project:nth-child(even){
 	flex-direction: row-reverse;
@@ -185,4 +188,40 @@ a i{
 }
 .project h5{
 	font-size: 1rem;
+}
+
+#contact {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+/* #contact h4 {
+	font-size: 3rem;
+	margin-bottom: 10px;
+	text-align: center;
+} */
+
+#contact h2 {
+	font-size: 3rem;
+	margin-bottom: 10px;
+	/* text-align: center; */
+}
+.address {
+	border: 1px solid black;
+	padding: 20px;
+	width: 50%;
+	margin: auto;
+	border-radius: 20px;
+}
+.address span {
+	display: inline-block;
+}
+.address span:first-of-type {
+	margin-right: 50px;
+}
+
+footer {
+	text-align: center;
+	color: grey;
+	margin: 20px auto;
 }
