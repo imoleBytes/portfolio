@@ -156,37 +156,37 @@ a i{
 	margin-right: 10px;
 }
 
-#portfolio h2{
+#projects h2{
 	font-size: 3rem;
 	margin-bottom: 10px;
 }
 
-#portfolio h4 {
+#projects h4 {
 	font-size: 2rem;
 	margin-bottom: 10px;
 }
 
-.project {
+.project-tile {
 	display: flex;
 	width: 70%;
 	margin: 50px auto;
 	gap: 40px;
 
 }
-.project:nth-child(even){
+.project-tile:nth-child(even){
 	flex-direction: row-reverse;
 }
 .project-img {
 	width: 50%;
 }
-.project-img img{
+.project-tile img{
 	width: 100%;
 }
 
 .project-description {
 	width: 50%;
 }
-.project h5{
+.project-tile h5{
 	font-size: 1rem;
 }
 
