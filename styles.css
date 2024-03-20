@@ -18,11 +18,16 @@ section, header, footer {
 section {
 	margin-bottom: 50px;
 }
+.test-div{
+	display: flex;
+	justify-content: center;
+}
 .header {
-    display: flex;
+    padding: 20px 0;
+	position: fixed;
+	display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
 }
 .header-title {
     display: flex;
@@ -42,11 +47,32 @@ section {
     color: red;
 }
 
+#navbar {
+	position: fixed;
+	top: 0;
+}
+
 nav ul {
     display: flex;
     font-size: 2rem;
     gap: 30px;
     list-style: none;
+}
+@media screen and (max-width: 700px) {
+	.header {
+		display: unset;
+		width: max-content;
+	}
+	/* .header-title{
+		margin: 0 auto;
+	}
+	nav{
+		margin: 0 auto;
+	} */
+	nav ul {
+		display: unset;
+		/* color: red; */
+	}
 }
 nav ul li a{
     text-decoration: none;
