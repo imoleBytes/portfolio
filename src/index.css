@@ -2,6 +2,10 @@
     font-family: raleway;
     src: url("../src/assets/fonts/Raleway-Regular.ttf");
 }
+@font-face {
+    font-family: raleway-bold;
+    src: url("../src/assets/fonts/Raleway-Bold.ttf");
+}
 
 @font-face {
     font-family: poppings;
@@ -25,6 +29,7 @@
 
 @theme {
     --font-raleway: raleway, "sans-serif";
+    --font-raleway-bold: raleway-bold, "sans-serif";
     --font-poppings: poppings, "sans-serif";
     --font-pacifico: pacifico, "sans-serif";
     --color-toggle: #EBF2FA;
@@ -40,5 +45,23 @@ body {
 .logo-span {
     color: transparent;
     background-clip: text;
-    background-image: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+    background-image: linear-gradient(to bottom, var(--color-primary), var(--color-secondary));
 }
+
+
+
+.contact-detail{
+    position: relative;
+    /* border-bottom: 1px #FF9C1B solid; */
+}
+.contact-detail::after {
+    content: "";
+    display: block;
+    width: 70%; /* Adjust border width */
+    height: 0.5px; /* Border thickness */
+    background-color: #b3aea8;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Centers border */
+  }
