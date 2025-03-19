@@ -22,8 +22,8 @@ const ContactDetail = ({Icon, title, content, iconColor}) => {
 
 const Profile = () => {
     return (
-        <aside className='md:w-2/6 bg-white py-10 rounded-2xl'>
-            <div className='w-1/2 mx-auto rounded-2xl relative'><img src={myImage} alt="boy" className='rounded-2xl relative md:-top-36'/></div>
+        <aside className='relative md:w-2/6 bg-white py-10 rounded-2xl md:pt-35'>
+            <div className='w-1/2 mx-auto rounded-2xl md:absolute md:-top-[12vh] md:left-1/4'><img src={myImage} alt="boy" className='rounded-2xl'/></div>
             <h2 className='font-raleway-bold font-bold my-2 text-center text-2xl'>Imole M. Kolawole</h2>
             <h4 className='text-center'>FullStack Developer</h4>
             <div className="socials grid grid-cols-4 gap-2 my-2 w-fit mx-auto">

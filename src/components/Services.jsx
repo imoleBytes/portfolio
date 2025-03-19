@@ -67,7 +67,7 @@ const Services = () => {
     ]
 
     return (
-        <div className='grid grid-cols-2 gap-5'>
+        <div className='grid md:grid-cols-2 gap-5'>
             {
                 services.map(service => <Service key={service.title} icon={service.icon} title={service.title} content={service.content} bgColor={service.bgColor} iconColor={service.iconColor}/>)
             }
@@ -80,7 +80,7 @@ export default Services;
 
 const Service = (props) => {
     return (
-        <div style={{ backgroundColor: props.bgColor }} className='px-10 py-5 rounded-3xl'>
+        <div className='px-10 py-5 rounded-3xl odd:bg-[#FFEBD1] even:bg-[#F2F7FC]'>
             <div className="flex gap-4 items-center rounded-2xl">
                 {<props.icon style={{ color: props.iconColor }}/>}
                 <h3 className='font-bold'>{props.title}</h3>

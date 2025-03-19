@@ -11,7 +11,7 @@ import { BiSolidContact } from "react-icons/bi";
 
 const NavBar = () => {
     return (
-        <div className='bg-[#F2F7FC] shadow rounded-2xl p-5 w-fit px-5 justify-self-end mb-5'>
+        <div className='bg-[#F2F7FC] shadow rounded-2xl p-5 w-fit px-5 justify-self-center md:justify-self-end mb-5'>
             <ul className='flex gap-5'>                
                 <Link to="/">
                     <li className='w-20 h-20 p-2 text-sm rounded-2xl text-white flex flex-col justify-center items-center bg-linear-to-tr from-primary to-secondary'>
