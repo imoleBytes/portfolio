@@ -65,3 +65,24 @@ body {
     left: 50%;
     transform: translateX(-50%); /* Centers border */
   }
+
+/* 
+.items-stretch{
+    align-items: stretch;
+} */
+
+.animate-mybounce{
+    animation: mybounce 1s linear infinite;
+}
+
+@keyframes mybounce {
+    0% {
+        transform: translate(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translate(0);
+    }    
+}

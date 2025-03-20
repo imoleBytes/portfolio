@@ -4,6 +4,7 @@ import { FaFacebookF, FaXTwitter, FaGithub, FaRegEnvelopeOpen} from "react-icons
 import { FaLinkedinIn } from "react-icons/fa";
 import { IoPhonePortraitOutline } from "react-icons/io5";
 import { FiMapPin, FiDownload } from "react-icons/fi";
+import { useLocation } from 'react-router-dom';
 
 
 
@@ -21,8 +22,10 @@ const ContactDetail = ({Icon, title, content, iconColor}) => {
 
 
 const Profile = () => {
+    const path = useLocation().pathname
+    // console.log("location is: ",loc)
     return (
-        <aside className='relative md:w-2/6 bg-white py-10 rounded-2xl md:pt-35'>
+        <aside className={`${path !== '/' ? 'max-md:hidden': ''} relative md:w-2/6 bg-white py-10 rounded-2xl md:pt-35 grow basis-0`}>
             <div className='w-1/2 mx-auto rounded-2xl md:absolute md:-top-[12vh] md:left-1/4'><img src={myImage} alt="boy" className='rounded-2xl'/></div>
             <h2 className='font-raleway-bold font-bold my-2 text-center text-2xl'>Imole M. Kolawole</h2>
             <h4 className='text-center'>FullStack Developer</h4>
@@ -37,7 +40,7 @@ const Profile = () => {
                 <ContactDetail Icon={FaRegEnvelopeOpen} title="Email" content="imole.dev@hotmail.com" iconColor="text-primary"/>
                 <ContactDetail Icon={FiMapPin} title="Location" content="Lagos, Nigeria" iconColor="text-secondary"/>
 
-                <button type="button" className='cursor-pointer mx-auto text-accent rounded-4xl flex mt-5 py-2 px-5 bg-linear-to-r from-primary to-secondary'>
+                <button type="button" className='animate-mybounce cursor-pointer mx-auto text-accent rounded-4xl flex mt-5 py-2 px-5 bg-linear-to-r from-primary to-secondary'>
                     <FiDownload className='mr-2'/>
                     Download Resume
                 </button>
