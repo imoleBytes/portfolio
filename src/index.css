@@ -1,88 +1,88 @@
 @font-face {
-    font-family: raleway;
-    src: url("../src/assets/fonts/Raleway-Regular.ttf");
+  font-family: raleway;
+  src: url("../src/assets/fonts/Raleway-Regular.ttf");
 }
 @font-face {
-    font-family: raleway-bold;
-    src: url("../src/assets/fonts/Raleway-Bold.ttf");
-}
-
-@font-face {
-    font-family: poppings;
-    src: url("../src/assets/fonts/Poppins-Black.ttf");
+  font-family: raleway-bold;
+  src: url("../src/assets/fonts/Raleway-Bold.ttf");
 }
 
 @font-face {
-    font-family: pacifico;
-    src: url("../src/assets/fonts/Pacifico-Regular.ttf");
+  font-family: poppings;
+  src: url("../src/assets/fonts/Poppins-Black.ttf");
+}
+
+@font-face {
+  font-family: pacifico;
+  src: url("../src/assets/fonts/Pacifico-Regular.ttf");
 }
 
 @import "tailwindcss";
 
-
-
-:root{
-    --color-primary: #FF9C1B;
-    --color-secondary: #EC1B09;
-    --color-accent: #F2F5F9;
+:root {
+  --color-primary: #ff9c1b;
+  --color-secondary: #ec1b09;
+  --color-accent: #f2f5f9;
 }
 
 @theme {
-    --font-raleway: raleway, "sans-serif";
-    --font-raleway-bold: raleway-bold, "sans-serif";
-    --font-poppings: poppings, "sans-serif";
-    --font-pacifico: pacifico, "sans-serif";
-    --color-toggle: #EBF2FA;
-    --color-primary: var(--color-primary);
-    --color-secondary: var(--color-secondary);
-    --color-accent: var(--color-accent);
+  --font-raleway: raleway, "sans-serif";
+  --font-raleway-bold: raleway-bold, "sans-serif";
+  --font-poppings: poppings, "sans-serif";
+  --font-pacifico: pacifico, "sans-serif";
+  --color-toggle: #ebf2fa;
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-accent: var(--color-accent);
 }
 
 body {
-    background: var(--color-accent);
+  background: var(--color-accent);
 }
 
 .logo-span {
-    color: transparent;
-    background-clip: text;
-    background-image: linear-gradient(to bottom, var(--color-primary), var(--color-secondary));
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-primary),
+    var(--color-secondary)
+  );
 }
 
-
-
-.contact-detail{
-    position: relative;
-    /* border-bottom: 1px #FF9C1B solid; */
+.contact-detail {
+  position: relative;
+  /* border-bottom: 1px #FF9C1B solid; */
 }
 .contact-detail::after {
-    content: "";
-    display: block;
-    width: 70%; /* Adjust border width */
-    height: 0.5px; /* Border thickness */
-    background-color: #b3aea8;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%); /* Centers border */
-  }
+  content: "";
+  display: block;
+  width: 70%; /* Adjust border width */
+  height: 0.5px; /* Border thickness */
+  background-color: #b3aea8;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Centers border */
+}
 
 /* 
 .items-stretch{
     align-items: stretch;
 } */
 
-.animate-mybounce{
-    animation: mybounce 1s linear infinite;
+.animate-mybounce {
+  animation: mybounce 1s linear infinite;
 }
 
 @keyframes mybounce {
-    0% {
-        transform: translate(0);
-    }
-    50%{
-        transform: translateY(-20px);
-    }
-    100%{
-        transform: translate(0);
-    }    
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
