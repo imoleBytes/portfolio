@@ -9,7 +9,7 @@ const Contact = () => {
         Contact
       </h1>
       {/* <hr className='h-0.5 bg-primary border-0'/> */}
-      <div className="sm:grid grid-cols-2 gap-5">
+      <div className="grid sm:grid-cols-2 gap-5">
         <div className="bg-[#FFEED9] p-10 rounded-2xl flex gap-2">
           <MdOutlineWifiCalling3 size={24} className="text-primary" />
           <div>
@@ -25,7 +25,7 @@ const Contact = () => {
             <p>imole.dev@hotmail.com</p>
           </div>
         </div>
-        <div className="bg-[#F8FBFB] p-10 rounded-2xl col-span-2">
+        <div className="bg-[#F8FBFB] p-10 rounded-2xl sm:col-span-2">
           <p className="text-2xl mb-10">
             I am always open to discussing new projects, opportunities in tech
             world, partnerships and more so mentorship.

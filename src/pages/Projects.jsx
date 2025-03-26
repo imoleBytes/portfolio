@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import proj1 from "../assets/images/proj1.png"; // Adjust the path based on your structure
 import proj2 from "../assets/images/proj2.png"; // Adjust the path based on your structure
 import proj3 from "../assets/images/proj3.png"; // Adjust the path based on your structure
+import newpage from "../assets/images/newpage-project.png";
 
 const Projects = () => {
   return (
@@ -47,6 +48,14 @@ const data = [
     name: "smart bank app",
     bgColor: "#FFE3BF",
   },
+  {
+    id: 5,
+    image: newpage,
+    category: "freelance",
+    name: "Newpage Edu Consult",
+    bgColor: "#FFE3BF",
+    url: "https://www.newpageconsult.com/",
+  },
 ];
 
 const Portfolio = () => {
@@ -82,6 +91,12 @@ const Portfolio = () => {
         >
           Web Development
         </li>
+        <li
+          onClick={() => handleFilter("freelance")}
+          className="cursor-pointer"
+        >
+          Freelance
+        </li>
         <li onClick={() => handleFilter("design")} className="cursor-pointer">
           Design
         </li>
@@ -101,6 +116,7 @@ const Portfolio = () => {
             category={project.category}
             name={project.name}
             bgColor={project.bgColor}
+            url={project.url}
           />
         ))}
       </div>
@@ -108,12 +124,18 @@ const Portfolio = () => {
   );
 };
 
-const Project = ({ name, category, image, bgColor }) => {
+const Project = ({ name, category, image, bgColor, url }) => {
   return (
-    <div className={`bg-[${bgColor}] p-2 rounded-2xl`}>
-      <img src={image} alt={name} className="mb-2 w-full h-auto rounded-2xl" />
-      <h4 className="text-xs text-left">{category}</h4>
-      <h3 className="font-raleway font-black capitalize">{name}</h3>
-    </div>
+    <a href={url} target="_blank">
+      <div className={`bg-[${bgColor}] p-2 rounded-2xl`}>
+        <img
+          src={image}
+          alt={name}
+          className="mb-2 w-full h-auto rounded-2xl"
+        />
+        <h4 className="text-xs text-left">{category}</h4>
+        <h3 className="font-raleway font-black capitalize">{name}</h3>
+      </div>
+    </a>
   );
 };
