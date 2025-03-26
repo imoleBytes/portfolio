@@ -21,6 +21,14 @@ export default Projects;
 
 const data = [
   {
+    id: 5,
+    image: newpage,
+    category: "freelance",
+    name: "Newpage Edu Consult",
+    bgColor: "#FFE3BF",
+    url: "https://www.newpageconsult.com/",
+  },
+  {
     id: 1,
     image: proj1,
     category: "app development",
@@ -47,14 +55,6 @@ const data = [
     category: "mentorship",
     name: "smart bank app",
     bgColor: "#FFE3BF",
-  },
-  {
-    id: 5,
-    image: newpage,
-    category: "freelance",
-    name: "Newpage Edu Consult",
-    bgColor: "#FFE3BF",
-    url: "https://www.newpageconsult.com/",
   },
 ];
 
